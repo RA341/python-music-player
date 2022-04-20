@@ -3,7 +3,7 @@ from tkinter import ttk
 from tkinter import messagebox
 from tkinter.filedialog import askdirectory
 from tkinter.ttk import Progressbar
-from PIL import ImageTk, Image
+from PIL import ImageTk, Image  ## install pil
 import pygame
 from os import listdir
 import os
