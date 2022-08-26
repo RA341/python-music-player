@@ -4,7 +4,7 @@ A music player built with python and tkinter which uses Mysql to save playlists 
 
 # Pre-installation
 
-Download Release directory
+Download ```Release``` directory
 
 Working mysql installation 
 
