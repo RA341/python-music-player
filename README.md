@@ -17,8 +17,7 @@ Replace Username and Password in ```main.py```
 
 Run ```python path/to/file/main.py```
 
-![python_x3Z2EhXs4s](https://user-images.githubusercontent.com/39427910/186941052-ec60dc7a-8801-4a50-8370-231c9103f932.png)
-
+<img src="https://user-images.githubusercontent.com/39427910/186941052-ec60dc7a-8801-4a50-8370-231c9103f932.png" width="48">
 
 # Todo
 Improve UI
