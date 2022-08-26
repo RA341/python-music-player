@@ -15,7 +15,7 @@ import random
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="Password"
+    password="password"
 )
 
 mycursor = mydb.cursor()
@@ -25,7 +25,7 @@ mycursor.execute("CREATE DATABASE IF NOT EXISTS music_player")
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="Password",
+    password="password",
     database="music_player"
 )
 
@@ -675,16 +675,16 @@ top = Tk()
 
 #################################################################################
 # Media
-prev_photo = image_rezizer(r"photos\fast-forward-media-control-button.png", 53, 56)
-next_photo = image_rezizer(r"photos\fast-forward-media-control-button2.png", 53, 56)
-play_photo = image_rezizer(r"photos\play-rounded-button.png", 49, 49)
-pause_photo = image_rezizer(r"photos\pause.png", 49, 49)
-mute_photo = image_rezizer(r"photos\mute.png", 22, 22)
-max_photo = image_rezizer(r"photos\volume-interface-symbol.png", 22, 22)
-add = image_rezizer(r"photos\add.png", 45, 45)
-shuffle_inactive = image_rezizer(r"photos\shuffle inactive.png", 25, 25)
-shuffle_active = image_rezizer(r"photos\shuffle active.png", 25, 25)
-delete = image_rezizer(r"photos\Delete.png", 40, 40)
+prev_photo = image_rezizer(r"res\fast-forward-media-control-button.png", 53, 56)
+next_photo = image_rezizer(r"res\fast-forward-media-control-button2.png", 53, 56)
+play_photo = image_rezizer(r"res\play-rounded-button.png", 49, 49)
+pause_photo = image_rezizer(r"res\pause.png", 49, 49)
+mute_photo = image_rezizer(r"res\mute.png", 22, 22)
+max_photo = image_rezizer(r"res\volume-interface-symbol.png", 22, 22)
+add = image_rezizer(r"res\add.png", 45, 45)
+shuffle_inactive = image_rezizer(r"res\shuffle inactive.png", 25, 25)
+shuffle_active = image_rezizer(r"res\shuffle active.png", 25, 25)
+delete = image_rezizer(r"res\Delete.png", 40, 40)
 
 ##########################################################################
 # CLASS/SONGLIST INIT
