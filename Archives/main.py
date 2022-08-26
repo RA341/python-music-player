@@ -15,7 +15,7 @@ import random
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="Razer"
+    password="Password"
 )
 
 mycursor = mydb.cursor()
@@ -25,7 +25,7 @@ mycursor.execute("CREATE DATABASE IF NOT EXISTS music_player")
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="Razer",
+    password="Password",
     database="music_player"
 )
 
@@ -36,6 +36,7 @@ mycursor.execute(
 
 mycursor.execute(
     "CREATE TABLE IF NOT EXISTS play_list(playlist_id INT AUTO_INCREMENT PRIMARY KEY,playlist_name VARCHAR(255))")
+mycursor.execute("CREATE TABLE IF NOT EXISTS paths(table_name CHAR(255),path CHAR(255))")
 
 
 class Seek(ttk.Scale):
@@ -746,8 +747,8 @@ selected = StringVar()
 selected2 = StringVar()
 ###########################################################################
 # Colours
-main_background_color = "#021c4b"
-text_color = "#9AECDB"
+main_background_color = "#FFFFFF"
+text_color = "#000000"
 
 ###########################################################################
 # TKINTER WINDOW
