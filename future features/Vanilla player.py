@@ -132,10 +132,10 @@ top = Tk()
 
 # global var
 
-prev_photo = image_rezizer(r"res\fast-forward-media-control-button.png", 53, 56)
-next_photo = image_rezizer(r"res\fast-forward-media-control-button2.png", 53, 56)
-play_photo = image_rezizer(r"res\play-rounded-button.png", 49, 49)
-pause_photo = image_rezizer(r"res\pause.png", 49, 49)
+prev_photo = image_rezizer(r"../Release/res/fast-forward-media-control-button.png", 53, 56)
+next_photo = image_rezizer(r"../Release/res/fast-forward-media-control-button2.png", 53, 56)
+play_photo = image_rezizer(r"../Release/res/play-rounded-button.png", 49, 49)
+pause_photo = image_rezizer(r"../Release/res/pause.png", 49, 49)
 
 player = musicplayer()
 music_list = listgen("songs")
