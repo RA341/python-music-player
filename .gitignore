@@ -2,9 +2,7 @@
 *log
 *exe
 .idea
-test.py
-test2.py
-test3.py
-test4.py
-ttest 5.py
+tests/
+songs/
 *spec
+
