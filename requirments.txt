@@ -1,3 +1,0 @@
-mysql-connector-python==8.0.30
-PyGetWindow==0.0.9
-PyRect==0.2.0
