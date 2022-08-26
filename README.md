@@ -4,7 +4,9 @@ A music player built with python and tkinter which uses Mysql to save playlists 
 
 # Pre-installation
 
-Download main.py and photos in the same directory
+Download Release directory
+
+Working mysql installation 
 
 Get dependencies by
 ```pip install -r requirments.txt```
