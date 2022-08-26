@@ -24,7 +24,7 @@ Do not seek while paused
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
-    passwd="Razer"
+    passwd="password"
 )
 
 mycursor = mydb.cursor()
@@ -34,7 +34,7 @@ mycursor.execute("CREATE DATABASE IF NOT EXISTS music_player")
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="Razer",
+    password="password",
     database="music_player"
 )
 
@@ -44,6 +44,7 @@ mycursor.execute("CREATE TABLE IF NOT EXISTS song_list(song_id INT AUTO_INCREMEN
 
 mycursor.execute("CREATE TABLE IF NOT EXISTS play_list(playlist_id INT AUTO_INCREMENT PRIMARY KEY,playlist_name VARCHAR(255))")
 
+mycursor.execute("CREATE TABLE IF NOT EXISTS paths(table_name CHAR(255),path CHAR(255))")
 
 class Seek(ttk.Scale):
     # (Seek)a type of Scale where the left click is hijacked to work like a right click
@@ -693,7 +694,7 @@ def image_rezizer(path, height, width):
 
 
 def save_file(name, path, time, seek, song_number, playlist):
-    f = open("Save_data.txt", "w")
+    f = open("tests/Save_data.txt", "w")
     f.write(str(name) + "\n" + str(path) + "\n" + str(time) + "\n" + str(seek) + "\n" + str(song_number) + "\n" + playlist)
     f.close()
 
@@ -705,7 +706,7 @@ def retrive_file():
     time = 0
     song_number = 0
     playlist = 0
-    f = open("Save_data.txt", "r")
+    f = open("tests/Save_data.txt", "r")
     Content = f.read()
     CoList = Content.split("\n")
     c = 0
@@ -940,7 +941,7 @@ def adds():
         add_button = OptionMenu(main_Frame, selected2, add_options, command=manager.add_func)
     else:
         add_button = OptionMenu(main_Frame, selected2, *add_options, command=manager.add_func)
-    add_button.config(indicatoron=0, image=add, background=main_background_color,
+    add_button.config(indicatoron=False, image=add, background=main_background_color,
                       highlightbackground=main_background_color)
     add_button.place(relx=0.775, rely=0.229, height=55, width=55)
 
